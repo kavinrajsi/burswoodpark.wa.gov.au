@@ -3,9 +3,20 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="BuildWebCompiler" Version="1.11.326" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\css\Partials\_attractions.scss" />
+    <None Include="wwwroot\css\Partials\_banner.scss" />
+    <None Include="wwwroot\css\Partials\_footer.scss" />
+    <None Include="wwwroot\css\Partials\_home.scss" />
+    <None Include="wwwroot\css\Partials\_introduction.scss" />
+    <None Include="wwwroot\css\Partials\_map.scss" />
+    <None Include="wwwroot\css\_interpolate.scss" />
+    <None Include="wwwroot\css\_mixin.scss" />
   </ItemGroup>
 </Project>

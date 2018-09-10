@@ -1,0 +1,27 @@
+.main-content-wrap {
+  overflow: hidden;
+}
+
+.content-container {
+    padding: 0 4vw;
+    max-width: 1320px;
+    margin: 0 auto;
+    display: block;
+}
+
+ul {
+  li {
+    margin-bottom: 35px;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    color: $dark-green;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

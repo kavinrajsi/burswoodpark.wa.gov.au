@@ -1,0 +1,30 @@
+.banner {
+    background: url('../images/banner.jpg') no-repeat center;
+    background-size: cover;
+    display: block;
+    height: 64vh;
+    @include interpolate('padding-top', 768px, 45px, 1024px, 90px, 'ease-in');
+
+    &--content {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding-left: 4vw;
+        padding-right: 4vw;
+
+        @media (max-width: 768px) {
+            .logo-img {
+                max-width: 50%;
+            }
+        }
+
+        p {
+            max-width: 728px;
+            @include interpolate('font-size', 768px, 30px, 1024px, 50px, 'ease-in');
+            margin-top: 26px;
+            color: $white;
+            font-family: $primary-font;
+            font-weight: 300;
+            line-height: 1.25;
+        }
+    }
+}

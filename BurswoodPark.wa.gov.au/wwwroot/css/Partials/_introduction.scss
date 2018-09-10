@@ -1,0 +1,40 @@
+
+.introduction {
+  padding: 42px 0px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    padding: 100px 0px;
+  }
+
+  &--text {
+    @media (min-width: 768px) {
+      flex: 1 0 46%;
+      max-width: 46%;
+    }
+
+    p {
+      @include font-fira-sans(18px, false, 300, 1.8);
+      color: $dark-liver;
+      margin-bottom: 24px;
+      @media (min-width: 768px) {
+        margin-bottom: 48px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &--image {
+    padding-top: 42px;
+    @media (min-width: 768px) {
+      padding-top: 0px;
+      padding-left: 60px;
+      flex: 1 0 54%;
+      max-width: 54%;
+    }
+  }
+}

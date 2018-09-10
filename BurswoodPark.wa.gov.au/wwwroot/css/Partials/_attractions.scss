@@ -1,0 +1,142 @@
+
+.attractions {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+  .title {
+    @include font-fira-sans(28px, false, 700, 1.4);
+    color: $dark-green;
+    margin-bottom: 34px;
+  }
+
+  &--list {
+    position: relative;
+    z-index: 1;
+    padding: 40px 0;
+
+    @media (min-width: 768px) {
+      flex: 1 0 66%;
+      max-width: 66%;
+      padding: 80px 0;
+    }
+    @media (max-width: 768px) {
+      padding-right: 0px;
+    }
+    @include interpolate('padding-right', 768px, 30px, 1024px, 124px, 'ease-in');
+    //padding-right: 20px;
+
+    &::before {
+      @include pseudo-background($columbia-blue);
+      @media (min-width: 768px) {
+        right: 0px;
+      }
+    }
+
+
+    ul {
+      li {
+        padding: 0px 0px 0px 25px;
+        color: $dark-green;
+        position: relative;
+        &::before{
+          content: " ";
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: $dark-green;
+          position: absolute;
+          top: 8px;
+          left: 0px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &--contact {
+    position: relative;
+    z-index: 1;
+
+    @media (min-width: 768px) {
+      flex: 1 0 34%;
+      max-width: 34%;
+    }
+    @media (max-width: 768px) {
+      padding-left: 0px;
+    }
+    @include interpolate('padding-top', 768px, 40px, 900px, 80px, 'ease-in');
+    @include interpolate('padding-bottom', 768px, 40px, 900px, 80px, 'ease-in');
+    @include interpolate('padding-left', 768px, 20px, 900px, 54px, 'ease-in');
+
+    &::before {
+      @include pseudo-background($celestial-blue);
+      @media (min-width: 768px) {
+        left: 0px;
+      }
+    }
+
+    .title {
+      @include font-fira-sans(28px, false, 700, 1.4);
+      color: $white;
+      margin-bottom: 30px;
+    }
+
+    .sub-title {
+      @include font-fira-sans(21px, false, 700, 1.4);
+      color: $white;
+      margin-bottom: 38px;
+    }
+
+    .contact--details {
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+
+      li {
+        display: flex;
+        position: relative;
+
+        &:after {
+          content: " ";
+          display: inline-block;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 26px;
+          height: 26px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+
+        &.phone {
+          &:after {
+            background-image: url('../images/phone.svg');
+          }
+        }
+
+        &.email {
+          &:after {
+            background-image: url('../images/email.svg');
+          }
+        }
+
+        &.map {
+          &:after {
+            background-image: url('../images/map.svg');
+          }
+        }
+
+        a {
+          margin-left: 46px;
+          color: $white;
+          word-break: break-all;
+        }
+      }
+    }
+  }
+}

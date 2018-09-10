@@ -1,0 +1,514 @@
+﻿/* import font */
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700");
+.classic-linear {
+  font-size: 12px; }
+  @media screen and (min-width: 600px) {
+    .classic-linear {
+      font-size: calc(4vw - 12px); } }
+  @media screen and (min-width: 900px) {
+    .classic-linear {
+      font-size: 24px; } }
+
+.easy-peasy {
+  font-size: 12px; }
+  @media screen and (min-width: 600px) {
+    .easy-peasy {
+      font-size: calc(3.11111vw - 6.66667px); } }
+  @media screen and (min-width: 700px) {
+    .easy-peasy {
+      font-size: calc(5.77778vw - 25.33333px); } }
+  @media screen and (min-width: 800px) {
+    .easy-peasy {
+      font-size: calc(3.11111vw - 4px); } }
+  @media screen and (min-width: 900px) {
+    .easy-peasy {
+      font-size: 24px; } }
+
+.cubic-bezier {
+  font-size: 12px; }
+  @media screen and (min-width: 600px) {
+    .cubic-bezier {
+      font-size: calc(0.87111vw + 6.77333px); } }
+  @media screen and (min-width: 700px) {
+    .cubic-bezier {
+      font-size: calc(3.13778vw - 9.09333px); } }
+  @media screen and (min-width: 800px) {
+    .cubic-bezier {
+      font-size: calc(7.99111vw - 47.92px); } }
+  @media screen and (min-width: 900px) {
+    .cubic-bezier {
+      font-size: 24px; } }
+
+.bloat-my-css {
+  font-size: 12px; }
+  @media screen and (min-width: 600px) {
+    .bloat-my-css {
+      font-size: calc(1.55102vw + 2.69388px); } }
+  @media screen and (min-width: 642.85714px) {
+    .bloat-my-css {
+      font-size: calc(4vw - 13.04956px); } }
+  @media screen and (min-width: 685.71429px) {
+    .bloat-my-css {
+      font-size: calc(5.46939vw - 23.12536px); } }
+  @media screen and (min-width: 728.57143px) {
+    .bloat-my-css {
+      font-size: calc(5.95918vw - 26.69388px); } }
+  @media screen and (min-width: 771.42857px) {
+    .bloat-my-css {
+      font-size: calc(5.46939vw - 22.91545px); } }
+  @media screen and (min-width: 814.28571px) {
+    .bloat-my-css {
+      font-size: calc(4vw - 10.95044px); } }
+  @media screen and (min-width: 857.14286px) {
+    .bloat-my-css {
+      font-size: calc(1.55102vw + 10.04082px); } }
+  @media screen and (min-width: 900px) {
+    .bloat-my-css {
+      font-size: 24px; } }
+
+/* Colours */
+/* Sass MQ Library */
+/* http://sass-mq.github.io/sass-mq/ */
+/* Breakpoints */
+/* Breakpoints */
+/* Displays breakpoints for dev purposes */
+/* primary font */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* reset for button */
+a {
+  text-decoration: none; }
+  a:hover, a:focus {
+    text-decoration: none; }
+
+* {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+/* body */
+body {
+  text-rendering: geometricPrecision;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent; }
+
+/* grid */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px; }
+
+/* image */
+img {
+  vertical-align: middle; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.banner {
+  background: url("../images/banner.jpg") no-repeat center;
+  background-size: cover;
+  display: block;
+  height: 64vh;
+  padding-top: 45px; }
+  @media screen and (min-width: 768px) {
+    .banner {
+      padding-top: calc(13.67187vw - 60px); } }
+  @media screen and (min-width: 853.33333px) {
+    .banner {
+      padding-top: calc(25.39063vw - 160px); } }
+  @media screen and (min-width: 938.66667px) {
+    .banner {
+      padding-top: calc(13.67188vw - 50px); } }
+  @media screen and (min-width: 1024px) {
+    .banner {
+      padding-top: 90px; } }
+  .banner--content {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 4vw;
+    padding-right: 4vw; }
+    @media (max-width: 768px) {
+      .banner--content .logo-img {
+        max-width: 50%; } }
+    .banner--content p {
+      max-width: 728px;
+      font-size: 30px;
+      margin-top: 26px;
+      color: #fff;
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 300;
+      line-height: 1.25; }
+      @media screen and (min-width: 768px) {
+        .banner--content p {
+          font-size: calc(6.07639vw - 16.66667px); } }
+      @media screen and (min-width: 853.33333px) {
+        .banner--content p {
+          font-size: calc(11.28472vw - 61.11111px); } }
+      @media screen and (min-width: 938.66667px) {
+        .banner--content p {
+          font-size: calc(6.07639vw - 12.22222px); } }
+      @media screen and (min-width: 1024px) {
+        .banner--content p {
+          font-size: 50px; } }
+
+.main-content-wrap {
+  overflow: hidden; }
+
+.content-container {
+  padding: 0 4vw;
+  max-width: 1320px;
+  margin: 0 auto;
+  display: block; }
+
+ul li {
+  margin-bottom: 35px;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.25;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  color: #177359; }
+  ul li:last-child {
+    margin-bottom: 0; }
+
+.introduction {
+  padding: 42px 0px; }
+  @media (min-width: 768px) {
+    .introduction {
+      display: flex;
+      align-items: center;
+      padding: 100px 0px; } }
+  @media (min-width: 768px) {
+    .introduction--text {
+      flex: 1 0 46%;
+      max-width: 46%; } }
+  .introduction--text p {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #4c4c4c;
+    margin-bottom: 24px; }
+    @media (min-width: 768px) {
+      .introduction--text p {
+        margin-bottom: 48px; } }
+    .introduction--text p:last-child {
+      margin-bottom: 0; }
+  .introduction--image {
+    padding-top: 42px; }
+    @media (min-width: 768px) {
+      .introduction--image {
+        padding-top: 0px;
+        padding-left: 60px;
+        flex: 1 0 54%;
+        max-width: 54%; } }
+
+@media (min-width: 768px) {
+  .attractions {
+    display: flex; } }
+
+.attractions .title {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #177359;
+  margin-bottom: 34px; }
+
+.attractions--list {
+  position: relative;
+  z-index: 1;
+  padding: 40px 0;
+  padding-right: 30px; }
+  @media (min-width: 768px) {
+    .attractions--list {
+      flex: 1 0 66%;
+      max-width: 66%;
+      padding: 80px 0; } }
+  @media (max-width: 768px) {
+    .attractions--list {
+      padding-right: 0px; } }
+  @media screen and (min-width: 768px) {
+    .attractions--list {
+      padding-right: calc(28.55903vw - 189.33333px); } }
+  @media screen and (min-width: 853.33333px) {
+    .attractions--list {
+      padding-right: calc(53.03819vw - 398.22222px); } }
+  @media screen and (min-width: 938.66667px) {
+    .attractions--list {
+      padding-right: calc(28.55903vw - 168.44444px); } }
+  @media screen and (min-width: 1024px) {
+    .attractions--list {
+      padding-right: 124px; } }
+  .attractions--list::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #bedad0;
+    top: 0;
+    bottom: 0;
+    left: -9999em;
+    right: -9999em;
+    z-index: -1; }
+    @media (min-width: 768px) {
+      .attractions--list::before {
+        right: 0px; } }
+  .attractions--list ul li {
+    padding: 0px 0px 0px 25px;
+    color: #177359;
+    position: relative; }
+    .attractions--list ul li::before {
+      content: " ";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #177359;
+      position: absolute;
+      top: 8px;
+      left: 0px; }
+    .attractions--list ul li:last-child {
+      margin-bottom: 0; }
+
+.attractions--contact {
+  position: relative;
+  z-index: 1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px; }
+  @media (min-width: 768px) {
+    .attractions--contact {
+      flex: 1 0 34%;
+      max-width: 34%; } }
+  @media (max-width: 768px) {
+    .attractions--contact {
+      padding-left: 0px; } }
+  @media screen and (min-width: 768px) {
+    .attractions--contact {
+      padding-top: calc(23.56902vw - 141.0101px); } }
+  @media screen and (min-width: 812px) {
+    .attractions--contact {
+      padding-top: calc(43.77104vw - 305.05051px); } }
+  @media screen and (min-width: 856px) {
+    .attractions--contact {
+      padding-top: calc(23.56902vw - 132.12121px); } }
+  @media screen and (min-width: 900px) {
+    .attractions--contact {
+      padding-top: 80px; } }
+  @media screen and (min-width: 768px) {
+    .attractions--contact {
+      padding-bottom: calc(23.56902vw - 141.0101px); } }
+  @media screen and (min-width: 812px) {
+    .attractions--contact {
+      padding-bottom: calc(43.77104vw - 305.05051px); } }
+  @media screen and (min-width: 856px) {
+    .attractions--contact {
+      padding-bottom: calc(23.56902vw - 132.12121px); } }
+  @media screen and (min-width: 900px) {
+    .attractions--contact {
+      padding-bottom: 80px; } }
+  @media screen and (min-width: 768px) {
+    .attractions--contact {
+      padding-left: calc(20.03367vw - 133.85859px); } }
+  @media screen and (min-width: 812px) {
+    .attractions--contact {
+      padding-left: calc(37.20539vw - 273.29293px); } }
+  @media screen and (min-width: 856px) {
+    .attractions--contact {
+      padding-left: calc(20.03367vw - 126.30303px); } }
+  @media screen and (min-width: 900px) {
+    .attractions--contact {
+      padding-left: 54px; } }
+  .attractions--contact::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #4A94C7;
+    top: 0;
+    bottom: 0;
+    left: -9999em;
+    right: -9999em;
+    z-index: -1; }
+    @media (min-width: 768px) {
+      .attractions--contact::before {
+        left: 0px; } }
+  .attractions--contact .title {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #fff;
+    margin-bottom: 30px; }
+  .attractions--contact .sub-title {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #fff;
+    margin-bottom: 38px; }
+  .attractions--contact .contact--details {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    .attractions--contact .contact--details li {
+      display: flex;
+      position: relative; }
+      .attractions--contact .contact--details li:after {
+        content: " ";
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 26px;
+        height: 26px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain; }
+      .attractions--contact .contact--details li.phone:after {
+        background-image: url("../images/phone.svg"); }
+      .attractions--contact .contact--details li.email:after {
+        background-image: url("../images/email.svg"); }
+      .attractions--contact .contact--details li.map:after {
+        background-image: url("../images/map.svg"); }
+      .attractions--contact .contact--details li a {
+        margin-left: 46px;
+        color: #fff;
+        word-break: break-all; }
+
+.section-map {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .section-map {
+      padding-top: calc(18.22917vw - 100px); } }
+  @media screen and (min-width: 853.33333px) {
+    .section-map {
+      padding-top: calc(33.85417vw - 233.33333px); } }
+  @media screen and (min-width: 938.66667px) {
+    .section-map {
+      padding-top: calc(18.22917vw - 86.66667px); } }
+  @media screen and (min-width: 1024px) {
+    .section-map {
+      padding-top: 100px; } }
+  @media screen and (min-width: 768px) {
+    .section-map {
+      padding-bottom: calc(27.34375vw - 170px); } }
+  @media screen and (min-width: 853.33333px) {
+    .section-map {
+      padding-bottom: calc(50.78125vw - 370px); } }
+  @media screen and (min-width: 938.66667px) {
+    .section-map {
+      padding-bottom: calc(27.34375vw - 150px); } }
+  @media screen and (min-width: 1024px) {
+    .section-map {
+      padding-bottom: 130px; } }
+  @media (max-width: 768px) {
+    .section-map {
+      transform: scale(2); } }
+
+.footer {
+  background: #464646; }
+
+.site-footer {
+  max-width: 1320px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px 4vw; }
+  @media (min-width: 768px) {
+    .site-footer {
+      text-align: right;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0;
+      padding-bottom: 0;
+      height: 112px; } }
+  @media (max-width: 768px) {
+    .site-footer .logo-wrap {
+      margin: 0 0 10px; } }
+  .site-footer .footer-copyright {
+    color: #fff;
+    font-family: "Fira Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    font-size: 14px;
+    letter-spacing: 0.01em; }
+

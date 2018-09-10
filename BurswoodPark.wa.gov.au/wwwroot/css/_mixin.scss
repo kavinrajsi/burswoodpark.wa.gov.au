@@ -1,0 +1,34 @@
+
+// Default pseudo-element definitions
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin pseudo-background($color) {
+  @include pseudo;
+  background: $color;
+  top: 0; bottom: 0; left: -9999em; right: -9999em;
+  z-index: -1;
+}
+
+// Fonts
+@mixin font-mixin($family: false, $size: false, $colour: false, $weight: false,  $lh: false, $serif: false) {
+  @if $family {
+      @if $serif {
+          font-family: $family, Georgia, 'Times New Roman', Times, serif;
+      }
+      @else {
+          font-family: $family, sans-serif;
+      }
+  }
+  @if $size { font-size: $size; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+
+@mixin font-fira-sans($size: false, $colour: false, $weight: false,  $lh: false) {
+  @include font-mixin('Fira Sans', $size, $colour, $weight, $lh, false);
+}

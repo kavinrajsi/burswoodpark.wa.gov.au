@@ -1,0 +1,36 @@
+
+
+.footer{
+  background: $outer-space;
+}
+.site-footer {
+  max-width: 1320px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px 4vw;
+  @media (min-width: 768px) {
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 112px;
+  }
+
+  .logo-wrap {
+    @media (max-width: 768px) {
+      margin: 0 0 10px;
+    }
+  }
+
+  .footer-copyright {
+    color: $white;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+  }
+}
