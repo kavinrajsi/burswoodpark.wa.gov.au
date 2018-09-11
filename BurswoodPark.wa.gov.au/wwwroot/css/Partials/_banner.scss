@@ -1,3 +1,5 @@
+@import "../helper";
+
 .banner {
     background: url('../images/banner.jpg') no-repeat center;
     background-size: cover;
@@ -19,12 +21,10 @@
 
         p {
             max-width: 728px;
-            @include interpolate('font-size', 768px, 30px, 1024px, 50px, 'ease-in');
             margin-top: 26px;
             color: $white;
-            font-family: $primary-font;
-            font-weight: 300;
-            line-height: 1.25;
+            @include font-fira-sans(50px, false, 300, 1.25);
+            @include interpolate('font-size', 768px, 30px, 1024px, 50px, 'ease-in');
         }
     }
 }

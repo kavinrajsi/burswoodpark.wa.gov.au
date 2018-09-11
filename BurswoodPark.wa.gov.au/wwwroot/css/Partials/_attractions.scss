@@ -1,7 +1,8 @@
+@import "../helper";
 
 .attractions {
   @media (min-width: 768px) {
-    display: flex;
+    @include flexbox;
   }
 
   .title {
@@ -16,15 +17,15 @@
     padding: 40px 0;
 
     @media (min-width: 768px) {
-      flex: 1 0 66%;
+      @include flex-basis(66%);
       max-width: 66%;
-      padding: 80px 0;
     }
     @media (max-width: 768px) {
       padding-right: 0px;
     }
+    @include interpolate('padding-top', 768px, 40px, 900px, 80px, 'ease-in');
+    @include interpolate('padding-bottom', 768px, 40px, 900px, 80px, 'ease-in');
     @include interpolate('padding-right', 768px, 30px, 1024px, 124px, 'ease-in');
-    //padding-right: 20px;
 
     &::before {
       @include pseudo-background($columbia-blue);
@@ -62,7 +63,7 @@
     z-index: 1;
 
     @media (min-width: 768px) {
-      flex: 1 0 34%;
+      @include flex-basis(34%);
       max-width: 34%;
     }
     @media (max-width: 768px) {
@@ -97,7 +98,7 @@
       margin: 0px;
 
       li {
-        display: flex;
+        @include flexbox;
         position: relative;
 
         &:after {

@@ -1,12 +1,9 @@
 /* import font */
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700');
 
-@import "interpolate";
-@import "helper";
-@import "mixin";
-@import "Partials/banner";
-@import "Partials/home";
-@import "Partials/introduction";
-@import "Partials/attractions";
-@import "Partials/map";
-@import "Partials/footer";
+@import "partials/home";
+@import "partials/banner";
+@import "partials/introduction";
+@import "partials/attractions";
+@import "partials/map";
+@import "partials/footer";

@@ -50,6 +50,7 @@
 		$values: str-slice($easing, 14, $i - 1); // Extract values between brackts
 		$list: explode($values, ', '); // Split the values into a list
 
+    @debug($list);
 
 		// Cast values to numebrs
 		$p0: number(nth($list, 1));
@@ -252,19 +253,4 @@
 		}
 	}
 	@return $result;
-}
-
-/// EXAMPLES
-
-.classic-linear {
-	@include interpolate('font-size', 600px, 12px, 900px, 24px);
-}
-.easy-peasy {
-	@include interpolate('font-size', 600px, 12px, 900px, 24px, 'ease-in');
-}
-.cubic-bezier {
-	@include interpolate('font-size', 600px, 12px, 900px, 24px, 'cubic-bezier(0.755, 0.05, 0.855, 0.06)');
-}
-.bloat-my-css {
-	@include interpolate('font-size', 600px, 12px, 900px, 24px, 'ease-in-ease-out', 6);
 }

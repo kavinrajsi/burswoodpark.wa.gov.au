@@ -1,10 +1,13 @@
+@import "../helper";
+
 .section-map {
-  padding-left: 0px;
-  padding-right: 0px;
-  @include interpolate('padding-top', 768px, 40px, 1024px, 100px, 'ease-in');
-  @include interpolate('padding-bottom', 768px, 40px, 1024px, 130px, 'ease-in');
-  text-align: center;
-  @media (max-width: 768px) {
-    transform: scale(2);
-  }
+    padding-left: 0px;
+    padding-right: 0px;
+    @include interpolate('padding-top', 768px, 40px, 1024px, 100px, 'ease-in');
+    @include interpolate('padding-bottom', 768px, 40px, 1024px, 130px, 'ease-in');
+    text-align: center;
+
+    @media (max-width: 576px) {
+        @include translate-scale(-38%, 10%, 2);
+    }
 }

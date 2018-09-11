@@ -1,82 +1,5 @@
 ﻿/* import font */
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700");
-.classic-linear {
-  font-size: 12px; }
-  @media screen and (min-width: 600px) {
-    .classic-linear {
-      font-size: calc(4vw - 12px); } }
-  @media screen and (min-width: 900px) {
-    .classic-linear {
-      font-size: 24px; } }
-
-.easy-peasy {
-  font-size: 12px; }
-  @media screen and (min-width: 600px) {
-    .easy-peasy {
-      font-size: calc(3.11111vw - 6.66667px); } }
-  @media screen and (min-width: 700px) {
-    .easy-peasy {
-      font-size: calc(5.77778vw - 25.33333px); } }
-  @media screen and (min-width: 800px) {
-    .easy-peasy {
-      font-size: calc(3.11111vw - 4px); } }
-  @media screen and (min-width: 900px) {
-    .easy-peasy {
-      font-size: 24px; } }
-
-.cubic-bezier {
-  font-size: 12px; }
-  @media screen and (min-width: 600px) {
-    .cubic-bezier {
-      font-size: calc(0.87111vw + 6.77333px); } }
-  @media screen and (min-width: 700px) {
-    .cubic-bezier {
-      font-size: calc(3.13778vw - 9.09333px); } }
-  @media screen and (min-width: 800px) {
-    .cubic-bezier {
-      font-size: calc(7.99111vw - 47.92px); } }
-  @media screen and (min-width: 900px) {
-    .cubic-bezier {
-      font-size: 24px; } }
-
-.bloat-my-css {
-  font-size: 12px; }
-  @media screen and (min-width: 600px) {
-    .bloat-my-css {
-      font-size: calc(1.55102vw + 2.69388px); } }
-  @media screen and (min-width: 642.85714px) {
-    .bloat-my-css {
-      font-size: calc(4vw - 13.04956px); } }
-  @media screen and (min-width: 685.71429px) {
-    .bloat-my-css {
-      font-size: calc(5.46939vw - 23.12536px); } }
-  @media screen and (min-width: 728.57143px) {
-    .bloat-my-css {
-      font-size: calc(5.95918vw - 26.69388px); } }
-  @media screen and (min-width: 771.42857px) {
-    .bloat-my-css {
-      font-size: calc(5.46939vw - 22.91545px); } }
-  @media screen and (min-width: 814.28571px) {
-    .bloat-my-css {
-      font-size: calc(4vw - 10.95044px); } }
-  @media screen and (min-width: 857.14286px) {
-    .bloat-my-css {
-      font-size: calc(1.55102vw + 10.04082px); } }
-  @media screen and (min-width: 900px) {
-    .bloat-my-css {
-      font-size: 24px; } }
-
-/* Colours */
-/* Sass MQ Library */
-/* http://sass-mq.github.io/sass-mq/ */
-/* Breakpoints */
-/* Breakpoints */
-/* Displays breakpoints for dev purposes */
-/* primary font */
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -97,7 +20,6 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
@@ -120,7 +42,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* reset for button */
 a {
   text-decoration: none; }
   a:hover, a:focus {
@@ -130,52 +51,39 @@ a {
   box-sizing: border-box; }
 
 img {
+  vertical-align: middle;
   max-width: 100%; }
 
-/* body */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
 body {
   text-rendering: geometricPrecision;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent; }
 
-/* grid */
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto; }
+.main-content-wrap {
+  overflow: hidden; }
 
-@media (min-width: 768px) {
-  .container {
-    width: 750px; } }
+.content-container {
+  padding: 0 4vw;
+  max-width: 1320px;
+  margin: 0 auto;
+  display: block; }
 
-@media (min-width: 992px) {
-  .container {
-    width: 970px; } }
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px; } }
-
-.container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto; }
-
-.row {
-  margin-right: -15px;
-  margin-left: -15px; }
-
-/* image */
-img {
-  vertical-align: middle; }
-
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto; }
+ul li {
+  margin-bottom: 35px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #177359; }
+  ul li:last-child {
+    margin-bottom: 0; }
 
 .banner {
   background: url("../images/banner.jpg") no-repeat center;
@@ -205,12 +113,13 @@ img {
         max-width: 50%; } }
     .banner--content p {
       max-width: 728px;
-      font-size: 30px;
       margin-top: 26px;
       color: #fff;
       font-family: "Fira Sans", sans-serif;
+      font-size: 50px;
       font-weight: 300;
-      line-height: 1.25; }
+      line-height: 1.25;
+      font-size: 30px; }
       @media screen and (min-width: 768px) {
         .banner--content p {
           font-size: calc(6.07639vw - 16.66667px); } }
@@ -224,37 +133,27 @@ img {
         .banner--content p {
           font-size: 50px; } }
 
-.main-content-wrap {
-  overflow: hidden; }
-
-.content-container {
-  padding: 0 4vw;
-  max-width: 1320px;
-  margin: 0 auto;
-  display: block; }
-
-ul li {
-  margin-bottom: 35px;
-  font-family: "Fira Sans", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 1.25;
-  font-size: 18px;
-  letter-spacing: 0.01em;
-  color: #177359; }
-  ul li:last-child {
-    margin-bottom: 0; }
-
 .introduction {
   padding: 42px 0px; }
   @media (min-width: 768px) {
     .introduction {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
       align-items: center;
       padding: 100px 0px; } }
   @media (min-width: 768px) {
     .introduction--text {
-      flex: 1 0 46%;
+      -webkit-flex-basis: 46%;
+      -moz-flex-basis: 46%;
+      -ms-flex-preferred-size: 46%;
+      flex-basis: 46%;
       max-width: 46%; } }
   .introduction--text p {
     font-family: "Fira Sans", sans-serif;
@@ -274,11 +173,18 @@ ul li {
       .introduction--image {
         padding-top: 0px;
         padding-left: 60px;
-        flex: 1 0 54%;
+        -webkit-flex-basis: 54%;
+        -moz-flex-basis: 54%;
+        -ms-flex-preferred-size: 54%;
+        flex-basis: 54%;
         max-width: 54%; } }
 
 @media (min-width: 768px) {
   .attractions {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
     display: flex; } }
 
 .attractions .title {
@@ -293,15 +199,43 @@ ul li {
   position: relative;
   z-index: 1;
   padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
   padding-right: 30px; }
   @media (min-width: 768px) {
     .attractions--list {
-      flex: 1 0 66%;
-      max-width: 66%;
-      padding: 80px 0; } }
+      -webkit-flex-basis: 66%;
+      -moz-flex-basis: 66%;
+      -ms-flex-preferred-size: 66%;
+      flex-basis: 66%;
+      max-width: 66%; } }
   @media (max-width: 768px) {
     .attractions--list {
       padding-right: 0px; } }
+  @media screen and (min-width: 768px) {
+    .attractions--list {
+      padding-top: calc(23.56902vw - 141.0101px); } }
+  @media screen and (min-width: 812px) {
+    .attractions--list {
+      padding-top: calc(43.77104vw - 305.05051px); } }
+  @media screen and (min-width: 856px) {
+    .attractions--list {
+      padding-top: calc(23.56902vw - 132.12121px); } }
+  @media screen and (min-width: 900px) {
+    .attractions--list {
+      padding-top: 80px; } }
+  @media screen and (min-width: 768px) {
+    .attractions--list {
+      padding-bottom: calc(23.56902vw - 141.0101px); } }
+  @media screen and (min-width: 812px) {
+    .attractions--list {
+      padding-bottom: calc(43.77104vw - 305.05051px); } }
+  @media screen and (min-width: 856px) {
+    .attractions--list {
+      padding-bottom: calc(23.56902vw - 132.12121px); } }
+  @media screen and (min-width: 900px) {
+    .attractions--list {
+      padding-bottom: 80px; } }
   @media screen and (min-width: 768px) {
     .attractions--list {
       padding-right: calc(28.55903vw - 189.33333px); } }
@@ -352,7 +286,10 @@ ul li {
   padding-left: 20px; }
   @media (min-width: 768px) {
     .attractions--contact {
-      flex: 1 0 34%;
+      -webkit-flex-basis: 34%;
+      -moz-flex-basis: 34%;
+      -ms-flex-preferred-size: 34%;
+      flex-basis: 34%;
       max-width: 34%; } }
   @media (max-width: 768px) {
     .attractions--contact {
@@ -425,6 +362,10 @@ ul li {
     padding: 0px;
     margin: 0px; }
     .attractions--contact .contact--details li {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
       display: flex;
       position: relative; }
       .attractions--contact .contact--details li:after {
@@ -479,9 +420,13 @@ ul li {
   @media screen and (min-width: 1024px) {
     .section-map {
       padding-bottom: 130px; } }
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
     .section-map {
-      transform: scale(2); } }
+      -moz-transform: translate(-38%, 10%) scale(2);
+      -o-transform: translate(-38%, 10%) scale(2);
+      -ms-transform: translate(-38%, 10%) scale(2);
+      -webkit-transform: translate(-38%, 10%) scale(2);
+      transform: translate(-38%, 10%) scale(2); } }
 
 .footer {
   background: #464646; }
@@ -494,8 +439,20 @@ ul li {
   @media (min-width: 768px) {
     .site-footer {
       text-align: right;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
       justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
       align-items: center;
       padding-top: 0;
       padding-bottom: 0;
@@ -506,9 +463,8 @@ ul li {
   .site-footer .footer-copyright {
     color: #fff;
     font-family: "Fira Sans", sans-serif;
-    font-style: normal;
+    font-size: 14px;
     font-weight: 300;
     line-height: 25px;
-    font-size: 14px;
     letter-spacing: 0.01em; }
 
