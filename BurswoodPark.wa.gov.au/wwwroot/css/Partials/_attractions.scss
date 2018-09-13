@@ -81,7 +81,6 @@
     }
 
     .title {
-      @include font-fira-sans(28px, false, 700, 1.4);
       color: $white;
       margin-bottom: 30px;
     }
@@ -139,5 +138,44 @@
         }
       }
     }
+
+    &--foreshore-works {
+        @include interpolate('padding-top', 768px, 40px, 900px, 72px, 'ease-in');
+
+        .title {
+            margin-bottom: 14px;
+        }
+
+        p {
+            @include font-fira-sans(17px, false, 400, 1.36);
+            letter-spacing: 0.01em;
+            color: $white;
+            margin-bottom: 8px;
+        }
+
+        .view-pdf {
+            margin-left: 3px;   
+            padding-left: 46px;
+            position: relative;
+            color: $white;
+            @include font-fira-sans(18px, false, 400, 3);
+            letter-spacing: 0.01em;
+
+            &:after {
+                content: " ";
+                display: inline-block;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 26px;
+                height: 26px;
+                background-image: url('../images/download.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+
   }
 }

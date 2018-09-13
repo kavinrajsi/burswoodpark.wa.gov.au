@@ -344,10 +344,6 @@ ul li {
       .attractions--contact::before {
         left: 0px; } }
   .attractions--contact .title {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 1.4;
     color: #fff;
     margin-bottom: 30px; }
   .attractions--contact .sub-title {
@@ -389,6 +385,52 @@ ul li {
         margin-left: 46px;
         color: #fff;
         word-break: break-all; }
+  .attractions--contact--foreshore-works {
+    padding-top: 40px; }
+    @media screen and (min-width: 768px) {
+      .attractions--contact--foreshore-works {
+        padding-top: calc(18.85522vw - 104.80808px); } }
+    @media screen and (min-width: 812px) {
+      .attractions--contact--foreshore-works {
+        padding-top: calc(35.01684vw - 236.0404px); } }
+    @media screen and (min-width: 856px) {
+      .attractions--contact--foreshore-works {
+        padding-top: calc(18.85522vw - 97.69697px); } }
+    @media screen and (min-width: 900px) {
+      .attractions--contact--foreshore-works {
+        padding-top: 72px; } }
+    .attractions--contact--foreshore-works .title {
+      margin-bottom: 14px; }
+    .attractions--contact--foreshore-works p {
+      font-family: "Fira Sans", sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.36;
+      letter-spacing: 0.01em;
+      color: #fff;
+      margin-bottom: 8px; }
+    .attractions--contact--foreshore-works .view-pdf {
+      margin-left: 3px;
+      padding-left: 46px;
+      position: relative;
+      color: #fff;
+      font-family: "Fira Sans", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 3;
+      letter-spacing: 0.01em; }
+      .attractions--contact--foreshore-works .view-pdf:after {
+        content: " ";
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 26px;
+        height: 26px;
+        background-image: url("../images/download.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain; }
 
 .section-map {
   padding-left: 0px;
